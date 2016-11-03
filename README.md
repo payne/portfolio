@@ -1,3 +1,25 @@
+# bummer
+
+using ember 2.8 the command `npm install && bower install && ember s` gives me this error (happens in ember s):
+```
+(node:58115) fs: re-evaluating native module sources is not supported. If you are using the graceful-fs module, please update it to a more recent version.
+(node:58115) fs: re-evaluating native module sources is not supported. If you are using the graceful-fs module, please update it to a more recent version.
+`libsass` bindings not found. Try reinstalling `node-sass`?
+Error: `libsass` bindings not found. Try reinstalling `node-sass`?
+    at getBinding (/Users/mpayne/Study/JavaScript/Ember/CodeOne/2015/portfolio/node_modules/node-sass/lib/index.js:22:11)
+    at Object.<anonymous> (/Users/mpayne/Study/JavaScript/Ember/CodeOne/2015/portfolio/node_modules/node-sass/lib/index.js:188:23)
+    at Module._compile (module.js:556:32)
+    at Object.Module._extensions..js (module.js:565:10)
+    at Module.load (module.js:473:32)
+    at tryModuleLoad (module.js:432:12)
+    at Function.Module._load (module.js:424:3)
+    at Module.require (module.js:483:17)
+    at require (internal/module.js:20:19)
+    at Object.<anonymous> (/Users/mpayne/Study/JavaScript/Ember/CodeOne/2015/portfolio/node_modules/broccoli-sass-source-maps/index.js:5:12)
+```
+
+Doing a blind `npm install -g node-sass` did not help.   How to fix this, please?
+
 # Portfolio
 
 This is an Ember.js application that I'm building to help manage financial
